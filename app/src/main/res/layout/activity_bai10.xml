@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#987070"
+    tools:context=".bai10">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/bai10_title"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:text="GridView and CheckBox:"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:onClick="onCheckAll"
+                android:id="@+id/bai10_check_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#BC6D6D"
+                android:text="Check All"
+                app:cornerRadius="0dp" />
+
+            <Button
+                android:onClick="onUncheckAll"
+                android:id="@+id/bai10_clear_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#6D7EBC"
+                android:text="Clear All"
+                app:cornerRadius="0dp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/bai10_grid"
+            android:layout_width="match_parent"
+            android:layout_height="534dp"
+            android:numColumns="2"
+            tools:listitem="@layout/bai10_2">
+
+        </GridView>
+
+        <Button
+            android:onClick="getChecked"
+            android:id="@+id/bai10_notif_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#6D7EBC"
+            android:text="Get item checked"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
