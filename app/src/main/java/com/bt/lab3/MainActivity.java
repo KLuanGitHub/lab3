@@ -32,8 +32,10 @@ public class MainActivity extends AppCompatActivity {
         btn3.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, bai3_8.class)));
         btn4.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, bai4.class)));
         btn5.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, bai5.class)));
-        btn9.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, bai9.class)));
+        btn6.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, BT6.class)));
+        btn7.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, BT7.class)));
         btn8.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, bai3_8.class)));
+        btn9.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, bai9.class)));
         btn10.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, bai10.class)));
 
     }
