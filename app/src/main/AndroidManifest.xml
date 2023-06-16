@@ -34,6 +34,21 @@
             android:name=".bai10"
             android:exported="false" />
         <activity
+            android:name=".BT6"
+            android:exported="false" />
+        <activity
+            android:name=".BT7"
+            android:exported="false" />
+        <activity
+            android:name=".BT7a"
+            android:exported="false" />
+        <activity
+            android:name=".BT7b"
+            android:exported="false" />
+        <activity
+            android:name=".BT7c"
+            android:exported="false" />
+        <activity
             android:name=".bai3_8"
             android:exported="false" />
         <activity
